@@ -1,0 +1,24 @@
+{
+	"name": "django-tutoial",
+	"dockerFile": "Dockerfile",
+	"context": "..",
+	"workspaceFolder": "/workspace",
+	"mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
+	"remoteUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				// "python.pythonPath": "/workspace/server/.venv/bin/python",
+				"python.linting.enabled": true,
+				"python.formatting.provider": "black",
+				"python.linting.pylintEnabled": true,
+				"python.linting.mypyEnabled": true
+			},
+			"extensions": [
+				"ms-python.python",
+				"GitHub.vscode-pull-request-github",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
+}
