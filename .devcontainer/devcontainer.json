@@ -12,14 +12,20 @@
 				"python.linting.enabled": true,
 				"python.formatting.provider": "black",
 				"python.linting.pylintEnabled": true,
-				"python.linting.mypyEnabled": true
+				"python.linting.mypyEnabled": true,
+				"[python]": {
+					"editor.formatOnSave": true,
+					"editor.defaultFormatter": "ms-python.black-formatter"
+				}
 			},
 			"extensions": [
-				"ms-python.python",
-				"ms-python.vscode-pylance",
+				"mhutchie.git-graph",
 				"GitHub.vscode-pull-request-github",
 				"esbenp.prettier-vscode",
-				"mhutchie.git-graph"
+				"usernamehw.errorlens",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter"
 			]
 		}
 	}
